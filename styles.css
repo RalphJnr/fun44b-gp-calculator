@@ -1,0 +1,22 @@
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: red;
+}
+
+.delete {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+}
