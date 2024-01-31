@@ -24,7 +24,6 @@ let gradeCalc;
 
 table.classList.toggle("delete");
 calcBtn.classList.toggle("delete");
-// errorMsg.classList.toggle("delete");
 
 function createTable(courseCodeValue, unitValue, gradeValue) {
   let tableRow = document.createElement("tr");
@@ -67,7 +66,7 @@ function addDeleteicon() {
   for (deleteIcon of deleteIcons) {
     deleteIcon.addEventListener("click", function () {
       this.parentElement.parentElement.remove();
-      // this.parentElement.parentElement.classList.add("delete");
+      courseUpdate.innerHTML = `Number of course: ${tableBody.childElementCount}`;
     });
   }
 }
@@ -103,7 +102,7 @@ button.addEventListener("click", function () {
     tableRows = document.querySelectorAll(".myTableRow");
     addDeleteicon();
     counter += 1;
-    courseUpdate.innerHTML = `Number of course: ${counter}`;
+    courseUpdate.innerHTML = `Number of course: ${tableBody.childElementCount}`;
     unitCalc = document.querySelectorAll(".unit-calc");
     gradeCalc = document.querySelectorAll(".grade-calc");
   }
@@ -166,6 +165,6 @@ calcBtn.addEventListener("click", function () {
     gp = result / totalUnit;
 
     let modalBody = document.querySelector(".modal-body");
-    modalBody.innerText = `Your GP is: ${gp}`;
+    modalBody.innerText = `Your GP is: ${gp.toFixed(2)}`;
   });
 });
