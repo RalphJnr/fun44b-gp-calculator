@@ -20,3 +20,44 @@ footer {
   padding: 10px;
   font-size: 0.8rem;
 }
+
+.cgpa-container {
+  background-color: #896c6c;
+  padding: 1.3em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 2em;
+}
+
+.cgpa-heading {
+  font-weight: 600;
+}
+
+.cgpa-small-heading {
+  font-size: 1.2rem;
+}
+
+.cgpa-container label {
+  margin-right: 5px;
+}
+
+.tcp-p {
+  margin-top: 30px;
+}
+
+.cgpa-inputted {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cgpa-inputted strong:first-child {
+  margin-right: 1.8em;
+}
+
+.hide {
+  display: none;
+}
+
+label {
+  font-weight: bold;
+}
